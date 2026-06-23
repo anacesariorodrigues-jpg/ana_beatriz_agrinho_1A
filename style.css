@@ -1,0 +1,148 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4fdf4;
+}
+
+header{
+    background:#1b5e20;
+    color:white;
+    padding:20px;
+    position:sticky;
+    top:0;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:20px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.hero{
+    height:90vh;
+    background:linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),
+    url("https://images.unsplash.com/photo-1500937386664-56d1dfef3854");
+    
+    background-size:cover;
+    background-position:center;
+
+    color:white;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+    padding:20px;
+}
+
+.hero h2{
+    font-size:3rem;
+}
+
+.hero p{
+    max-width:700px;
+    margin:20px 0;
+    font-size:1.2rem;
+}
+
+button{
+    padding:12px 25px;
+    border:none;
+    border-radius:10px;
+    background:#4caf50;
+    color:white;
+    cursor:pointer;
+    margin:10px;
+    transition:0.3s;
+    font-size:1rem;
+}
+
+button:hover{
+    background:#2e7d32;
+    transform:scale(1.05);
+}
+
+.card{
+    padding:60px 10%;
+    text-align:center;
+}
+
+.verde{
+    background:#dff5df;
+}
+
+.cards-container{
+    margin-top:30px;
+
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+.mini-card{
+    width:250px;
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 0 15px rgba(0,0,0,0.1);
+}
+
+#contador{
+    font-size:4rem;
+    color:#2e7d32;
+    margin:20px;
+}
+
+#resultado{
+    margin-top:20px;
+    font-size:1.1rem;
+    font-weight:bold;
+}
+
+footer{
+    background:#1b5e20;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero h2{
+        font-size:2rem;
+    }
+
+}
